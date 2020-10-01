@@ -1,0 +1,8 @@
+# FIRST DOCKERFILE IMPLEMENTATION
+
+FROM ubuntu
+LABEL MAINTAINER supportwebapps@oracle.com
+RUN mkdir /config
+COPY config /config/config
+ENV version=1
+CMD cat /config/config
